@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="641.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.SignupController">
+   <children>
+      <ImageView fx:id="backgroundImageView" blendMode="DARKEN" fitHeight="651.0" fitWidth="967.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Desktop/Story/bg1.jpg" />
+         </image>
+      </ImageView>
+      <Text fill="#f2b7ff" layoutX="682.0" layoutY="581.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FOCUS, CLICK &amp; SHARE !">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <VBox layoutX="264.0" layoutY="47.0" prefHeight="381.0" prefWidth="398.0" style="-fx-background-color: #00000000;">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Story">
+               <font>
+                  <Font size="32.0" />
+               </font>
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.8313725590705872" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8313725590705872" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <VBox.margin>
+                  <Insets left="60.0" />
+               </VBox.margin>
+            </Text>
+            <HBox prefHeight="50.0" prefWidth="256.0">
+               <children>
+                  <Label prefWidth="153.0" text="Full Name :" textFill="#d400ff">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="fullNameField" prefHeight="25.0" prefWidth="188.0" style="-fx-background-color: C0DAF3; -fx-border-color: #d400ff; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="256.0">
+               <children>
+                  <Label prefWidth="153.0" text="Username :" textFill="#d400ff">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="usernameField" prefHeight="25.0" prefWidth="188.0" style="-fx-background-color: C0DAF3; -fx-border-color: #d400ff; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="256.0">
+               <children>
+                  <Label prefHeight="27.0" prefWidth="153.0" text="Email :" textFill="#d400ff">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="emailField" prefHeight="25.0" prefWidth="188.0" style="-fx-background-color: C0DAF3; -fx-border-color: #d400ff; -fx-border-radius: 15px; -fx-background-radius: 15px;">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="256.0">
+               <children>
+                  <Label prefWidth="153.0" text="Password :" textFill="#d400ff">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="passwordField" prefHeight="25.0" prefWidth="188.0" style="-fx-background-color: C0DAF3; -fx-border-color: #d400ff; -fx-background-radius: 15px; -fx-border-radius: 15px;">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="256.0">
+               <children>
+                  <Label text="Confirm Password :" textFill="#d400ff">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="confirmPasswordFiled" prefHeight="25.0" prefWidth="188.0" style="-fx-background-color: C0DAF3; -fx-border-color: #d400ff; -fx-background-radius: 15px; -fx-border-radius: 15px;">
+                     <HBox.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </HBox.margin>
+                  </PasswordField>
+               </children>
+            </HBox>
+            <HBox prefHeight="50.0" prefWidth="256.0">
+               <children>
+                  <Label prefWidth="153.0" text="Gender :" textFill="#d400ff">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <RadioButton fx:id="maleButton" mnemonicParsing="false" text="Male" textFill="#d400ff">
+                     <HBox.margin>
+                        <Insets left="10.0" top="8.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="gender" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="femaleButton" mnemonicParsing="false" text="Female" textFill="#d400ff" toggleGroup="$gender">
+                     <HBox.margin>
+                        <Insets left="20.0" top="8.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <Button fx:id="signupButton" mnemonicParsing="false" onMouseClicked="#signupButtonClicked" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: C0DAF3; -fx-border-color: #d400ff; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="SIGN UP" textFill="#d400ff">
+               <VBox.margin>
+                  <Insets left="120.0" top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="167.0" style="-fx-background-color: #00000000; -fx-border-color: #00000000;">
+               <graphic>
+                  <Text fx:id="loginPage" fill="#d400ff" onMouseClicked="#loginPageClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="Already have an account? LOGIN!">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </Text>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="70.0" top="10.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="12.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

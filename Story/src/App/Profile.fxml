@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="641.0" prefWidth="967.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.ProfileController">
+   <children>
+      <HBox prefHeight="641.0" prefWidth="967.0" style="-fx-background-color: C0DAF3;">
+         <children>
+            <VBox prefHeight="641.0" prefWidth="215.0" style="-fx-background-color: #E37BF1;">
+               <children>
+                  <ImageView fx:id="logoImage" fitHeight="214.0" fitWidth="266.0" pickOnBounds="true" />
+                  <Label prefHeight="46.0" prefWidth="144.0" style="-fx-background-color: #d954eb; -fx-background-radius: 15px;" text="My Profile" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="myUploadsLabel" onMouseClicked="#myUploadsLabelClicked" prefHeight="46.0" prefWidth="163.0" style="-fx-background-radius: 15px;" text="My Uploads" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="30.0" top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="storiesLabel" onMouseClicked="#storiesLabelClicked" prefHeight="46.0" prefWidth="144.0" style="-fx-background-radius: 15px;" text="Stories" textFill="WHITE">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets left="30.0" top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="logoutButton" mnemonicParsing="false" onMouseClicked="#logoutButtonClicked" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: C0DAF3; -fx-border-color: #d400ff; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="LOGOUT" textFill="#d400ff">
+                     <VBox.margin>
+                        <Insets left="50.0" top="50.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Label text="Created by Dibya Jyoti Mandal" textFill="WHITE">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="115.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox prefHeight="641.0" prefWidth="756.0">
+               <children>
+                  <ImageView fx:id="profilePictureImage" fitHeight="156.0" fitWidth="159.0" pickOnBounds="true">
+                     <VBox.margin>
+                        <Insets left="300.0" top="50.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Button fx:id="editProfilePictureButton" mnemonicParsing="false" onMouseClicked="#editProfilePictureButtonClicked" prefHeight="27.0" prefWidth="118.0" style="-fx-background-color: C0DAF3; -fx-border-color: #d400ff; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="Edit Profile Picture" textFill="#d400ff">
+                     <VBox.margin>
+                        <Insets left="323.0" top="25.0" />
+                     </VBox.margin>
+                  </Button>
+                  <VBox prefHeight="423.0" prefWidth="754.0">
+                     <children>
+                        <HBox prefHeight="65.0" prefWidth="754.0">
+                           <children>
+                              <Label prefWidth="180.0" text="Full Name :" textFill="#d400ff">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="12.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="fullnameLabel" textFill="#d400ff">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="12.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="65.0" prefWidth="754.0">
+                           <children>
+                              <Label prefWidth="180.0" text="Username :" textFill="#d400ff">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="12.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="userNameLabel" textFill="#d400ff">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="12.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="65.0" prefWidth="754.0">
+                           <children>
+                              <Label prefWidth="180.0" text="Email :" textFill="#d400ff">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="12.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="emailLabel" textFill="#d400ff">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="12.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="65.0" prefWidth="754.0">
+                           <children>
+                              <Label prefWidth="180.0" text="Gender :" textFill="#d400ff">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="12.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="genderLabel" textFill="#d400ff">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="12.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="65.0" prefWidth="754.0">
+                           <children>
+                              <Label prefHeight="38.0" prefWidth="180.0" text="Total Uploads :" textFill="#d400ff">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="12.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="totalUploadsLabel" textFill="#d400ff">
+                                 <font>
+                                    <Font size="26.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="12.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

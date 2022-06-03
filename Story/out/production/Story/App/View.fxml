@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.ViewController">
+   <children>
+      <VBox layoutX="14.0" layoutY="14.0" prefHeight="776.0" prefWidth="775.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <ImageView fx:id="image" fitHeight="600.0" fitWidth="800.0" pickOnBounds="true">
+               <VBox.margin>
+                  <Insets left="28.0" />
+               </VBox.margin>
+            </ImageView>
+            <TextArea fx:id="caption" editable="false" prefHeight="200.0" prefWidth="200.0" style="-fx-text-fill: #E37BF1; -fx-border-color: #E37BF1;" text="firestorm69 : Looking good!">
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

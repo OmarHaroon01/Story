@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: C0DAF3;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.UploadPhotoController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="20.0">
+         <children>
+            <TextArea fx:id="captionField" prefHeight="81.0" prefWidth="580.0" promptText="Caption" style="-fx-border-color: #E37BF1; -fx-text-fill: #E37BF1;" wrapText="true">
+               <font>
+                  <Font name="Arial Bold Italic" size="15.0" />
+               </font>
+            </TextArea>
+            <ImageView fx:id="imageView" fitHeight="148.0" fitWidth="153.0" pickOnBounds="true">
+               <VBox.margin>
+                  <Insets left="190.0" top="20.0" />
+               </VBox.margin>
+            </ImageView>
+            <ToggleButton fx:id="choosePhotoButton" mnemonicParsing="false" onMouseClicked="#choosePhotoButtonClicked" style="-fx-background-color: C0DAF3; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: #9100a8;" text="Choose Photo" textFill="#9100a8">
+               <toggleGroup>
+                  <ToggleGroup fx:id="privacy1" />
+               </toggleGroup>
+               <VBox.margin>
+                  <Insets left="222.0" top="8.0" />
+               </VBox.margin>
+            </ToggleButton>
+            <HBox prefHeight="41.0" prefWidth="580.0">
+               <children>
+                  <ToggleButton fx:id="publicButton" mnemonicParsing="false" onMouseClicked="#publicButtonClicked" style="-fx-background-color: C0DAF3; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: #9100a8;" text="Public" textFill="#9100a8">
+                     <HBox.margin>
+                        <Insets left="190.0" />
+                     </HBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="privacy" />
+                     </toggleGroup>
+                  </ToggleButton>
+                  <ToggleButton fx:id="privateButton" mnemonicParsing="false" onMouseClicked="#privateButtonClicked" style="-fx-background-color: C0DAF3; -fx-background-radius: 15px; -fx-border-radius: 15px; -fx-border-color: #9100a8;" text="Private" textFill="#9100a8" toggleGroup="$privacy">
+                     <HBox.margin>
+                        <Insets left="55.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </ToggleButton>
+               </children>
+               <padding>
+                  <Insets top="8.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="81.0" prefWidth="580.0">
+               <children>
+                  <Button fx:id="cancelButton" mnemonicParsing="false" onMouseClicked="#cancelButtonClicked" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: C0DAF3; -fx-border-color: #d400ff; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="Cancel" textFill="#d400ff" />
+                  <Button fx:id="uploadButton" mnemonicParsing="false" onMouseClicked="#uploadButtonClicked" prefHeight="33.0" prefWidth="98.0" style="-fx-background-color: C0DAF3; -fx-border-color: #d400ff; -fx-background-radius: 15px; -fx-border-radius: 15px;" text="Upload" textFill="#d400ff">
+                     <HBox.margin>
+                        <Insets left="310.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets left="30.0" top="25.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
